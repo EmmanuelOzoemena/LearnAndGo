@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lear'n'go - Learn today, Go anywhere.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <button class="menu-btn" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="logo-container">
+        <h1 class="logo-text">Lear'n'go</h1>
+      </div>
+      <div class="header-actions">
+        <i class="fa-solid fa-magnifying-glass action-icon"></i>
+        <a href="login.html" class="action-icon" aria-label="Profile">
+          <i class="fa-regular fa-user"></i>
+        </a>
+        <div class="cart-icon-wrapper">
+          <i class="fa-solid fa-cart-shopping action-icon"></i>
+          <span class="cart-badge">3</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2 class="hero-heading">
+            <span class="highlight-purple">Learn</span> today,<br /><span
+              class="highlight-purple"
+              >Go</span
+            >
+            anywhere.
+          </h2>
+          <p class="hero-paragraph">
+            Lear'n'go is your go-to platform to discover, purchase and learn
+            from the best courses anytime, anywhere.
+          </p>
+          <div class="hero-buttons">
+            <a href="signup.html" class="btn btn-primary">Get started</a>
+            <a href="#courses" class="btn btn-secondary">Explore</a>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <img
+            src="hero-pic.png"
+            alt="Learning path illustration"
+            class="hero-img"
+          />
+        </div>
+      </section>
+
+      <section class="search-filter-section">
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-bar-icon"></i>
+          <input
+            type="text"
+            placeholder="What do you want to learn?"
+            class="search-input"
+          />
+        </div>
+
+        <div class="filter-dropdowns-container">
+          <button class="filter-dropdown active-dropdown">
+            <i class="fa-solid fa-table-cells-large"></i> All Categories
+            <i class="fa-solid fa-chevron-down chevron"></i>
+          </button>
+          <button class="filter-dropdown">
+            Level <i class="fa-solid fa-chevron-down chevron"></i>
+          </button>
+          <button class="filter-dropdown">
+            Price <i class="fa-solid fa-chevron-down chevron"></i>
+          </button>
+          <button class="filter-dropdown">
+            Language <i class="fa-solid fa-chevron-down chevron"></i>
+          </button>
+          <button class="filter-dropdown sort-btn">
+            <i class="fa-solid fa-bars-staggered"></i> Sort by
+            <i class="fa-solid fa-chevron-down chevron"></i>
+          </button>
+        </div>
+      </section>
+
+      <section id="courses" class="courses-section">
+        <div class="section-header">
+          <h3 class="section-title">Popular Courses</h3>
+          <a href="#" class="more-link"
+            >More courses <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="courses-grid">
+          <article class="course-card">
+            <div class="card-banner banner-web">
+              <i class="fa-solid fa-code banner-fallback-icon"></i>
+              <button class="heart-btn" aria-label="Add to wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="course-body">
+              <span class="category-tag tag-dev">Development</span>
+              <h4 class="course-title">
+                The Complete Web Development Bootcamp
+              </h4>
+              <p class="instructor">Dr. Angela Yu</p>
+              <div class="rating-row">
+                <span class="rating-star"
+                  ><i class="fa-solid fa-star"></i> 4.8</span
+                >
+                <span class="review-count">(12.4K)</span>
+              </div>
+              <p class="course-price">₦15,000</p>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="card-banner banner-python">
+              <i class="fa-brands fa-python banner-fallback-icon"></i>
+              <button class="heart-btn" aria-label="Add to wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="course-body">
+              <span class="category-tag tag-prog">Programming</span>
+              <h4 class="course-title">
+                Python for Beginners A Complete Guide
+              </h4>
+              <p class="instructor">Jose Portilla</p>
+              <div class="rating-row">
+                <span class="rating-star"
+                  ><i class="fa-solid fa-star"></i> 4.7</span
+                >
+                <span class="review-count">(8.7K)</span>
+              </div>
+              <p class="course-price">₦12,000</p>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="card-banner banner-excel">
+              <i class="fa-regular fa-file-excel banner-fallback-icon"></i>
+              <button class="heart-btn" aria-label="Add to wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="course-body">
+              <span class="category-tag tag-biz">Business</span>
+              <h4 class="course-title">
+                Microsoft Excel - From Beginner to Advanced
+              </h4>
+              <p class="instructor">Leila Gharani</p>
+              <div class="rating-row">
+                <span class="rating-star"
+                  ><i class="fa-solid fa-star"></i> 4.6</span
+                >
+                <span class="review-count">(6.1K)</span>
+              </div>
+              <p class="course-price">₦8,500</p>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="card-banner banner-ps">
+              <i class="fa-ghost banner-fallback-icon">PS</i>
+              <button class="heart-btn" aria-label="Add to wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="course-body">
+              <span class="category-tag tag-design">Design</span>
+              <h4 class="course-title">Adobe Photoshop Masterclass</h4>
+              <p class="instructor">Colin Smith</p>
+              <div class="rating-row">
+                <span class="rating-star"
+                  ><i class="fa-solid fa-star"></i> 4.9</span
+                >
+                <span class="review-count">(9.3K)</span>
+              </div>
+              <p class="course-price">₦10,000</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="section-header" style="padding-right: 20px">
+          <h3 class="section-title">Reviews</h3>
+          <a href="#" class="more-link"
+            >More reviews <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="slider-wrapper">
+          <button class="nav-arrow left-arrow" aria-label="Previous review">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="reviews-container">
+            <div class="review-card">
+              <span class="quote-mark">“</span>
+              <p class="review-text">
+                Lear'n'go has completely transformed how I learn. The courses
+                are top-notch and the platform is super easy to use!
+              </p>
+              <div class="user-info">
+                <div class="avatar-placeholder"></div>
+                <div>
+                  <h5 class="user-name">Chinedu Okafor</h5>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <span class="quote-mark">“</span>
+              <p class="review-text">
+                I was able to upskill and land a better job. The instructors
+                explain things so well. Highly recommended!
+              </p>
+              <div class="user-info">
+                <div class="avatar-placeholder"></div>
+                <div>
+                  <h5 class="user-name">Aisha Bello</h5>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="nav-arrow right-arrow" aria-label="Next review">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <h4 class="logo-text">Lear'n'go</h4>
+          <p class="brand-desc">
+            Your go-to platform to discover, purchase and learn from the best
+            courses anytime, anywhere.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="#">All Courses</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Instructors</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Deals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h5>Stay Updated</h5>
+          <p>Subscribe to get the latest courses and offers.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="button" aria-label="Subscribe">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lear'n'go. All rights reserved.</p>
+        <div class="payment-methods">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <span class="verve-text">Verve</span>
+          <i class="fa-brands fa-cc-paypal"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
