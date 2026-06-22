@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lear'n'go - Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <header class="auth-header">
+        <h1 class="logo-text">Lear'n'go</h1>
+        <p>Create an account to start moving with your skills</p>
+      </header>
+
+      <form class="auth-form" onsubmit="event.preventDefault()">
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="John Doe" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="••••••••"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn-auth">Sign Up</button>
+      </form>
+
+      <footer class="auth-footer">
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
