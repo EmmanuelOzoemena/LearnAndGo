@@ -1,4 +1,3 @@
-/* ROOT VARIABLES & RESET */
 :root {
   --bg-black: #060608;
   --card-bg: #111115;
@@ -173,7 +172,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* HORIZONTAL SCROLLING DROP-DOWNS */
 .filter-dropdowns-container {
   display: flex;
   gap: 8px;
@@ -240,7 +238,7 @@ body {
 
 .courses-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Optimized fully for mobile viewing templates */
+  grid-template-columns: 1fr; 
   gap: 20px;
 }
 
@@ -557,7 +555,7 @@ body {
   color: #fff;
 }
 
-/* MEDIA QUERY FOR DESKTOP OR TABLET PREVIEWS (Bonus for presentation mode) */
+/* MEDIA QUERY FOR DESKTOP OR TABLET PREVIEWS */
 @media (min-width: 768px) {
   .hero {
     flex-direction: row;
